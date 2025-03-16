@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        // Pedimos el dato de entrada
+
         Console.Write("Ingrese el número a descomponer: ");
         int n = int.Parse(Console.ReadLine());
 
-        // Proceso
+        
         int[,] mat = new int[50, 2];
         int tope = 0;
         mat[tope, 0] = n;
@@ -28,14 +28,14 @@ class Program
             mat[tope, 1] = mat[tope, 0];
         }
 
-        // Mostramos el resultado
+       
         string fac = n + " = ";
         for (i = 0; i <= tope; i++)
         {
             fac += mat[i, 1] + " x ";
         }
 
-        // Quitamos el último " x "
+        
         fac = fac.Substring(0, fac.Length - 3);
         Console.WriteLine(fac);
     }
