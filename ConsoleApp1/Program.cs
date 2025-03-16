@@ -4,11 +4,11 @@ class Program
 {
     static void Main()
     {
-        // Pido dato de entrada
+
         Console.Write("Ingrese orden de la matriz: ");
         int n = int.Parse(Console.ReadLine());
 
-        // Proceso
+
         int[,] mat = new int[n, n];
         int sum = 0, may = int.MinValue, men = int.MaxValue;
 
@@ -34,6 +34,6 @@ class Program
         Console.WriteLine("El valor máximo es: " + may);
         Console.WriteLine("El valor mínimo es: " + men);
 
-        Console.ReadKey(); // Para pausar la ejecución y ver los resultados
+        Console.ReadKey();
     }
 }
